@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    margin: 50px auto;
+    font-size: 45px;
+}
+
+nav{
+    text-align: center;
+}
+nav a{
+    text-decoration-line: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: rgb(87, 86, 86);
+    font-size: 20px;
+}
+
+nav a:hover{
+    font-size: 25px;
+    color: black;
+}
+
+img{
+    
+}
