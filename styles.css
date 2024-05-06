@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, rgb(5, 12, 78), rgb(19, 27, 139));
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 20px 25px;
+}
+h1{
+    text-align: center;
+}
+form h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+form label{
+    margin-bottom: 25px;
+}
+form label .fa-solid{
+    color: rgb(5, 12, 78);
+    margin-right: 5px;
+}
+input{
+    outline: none;
+    border: none;
+    color: #252525;
+    background-color: rgb(255, 255, 255, 0.0);
+    border-bottom: solid 1px rgb(5, 12, 78);
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+form .link{
+    color: #252525;
+    margin-bottom: 15px;
+}
+form button{
+    color: white;
+    border: none;
+    background-color: rgb(5, 12, 78);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
