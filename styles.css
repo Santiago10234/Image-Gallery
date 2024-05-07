@@ -9,7 +9,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: linear-gradient(to right, rgb(5, 12, 78), rgb(19, 27, 139));
+    background: linear-gradient(to right, rgb(4, 9, 59), rgb(19, 27, 139), rgb(4, 9, 59));
 }
 form{
     display: flex;
@@ -18,12 +18,13 @@ form{
     background-color: rgba(245, 245, 248, 0.3);
     padding: 20px 25px;
     box-shadow: 0 5px 10px black;
-    
+    border-radius: 10px;
 }
 h1{
     text-align: center;
     margin-bottom: 50px;
     font-size: 60px;
+    color: white;
 }
 form h2{
     font-size: 35px;
@@ -48,7 +49,7 @@ input{
 }
 
 form .link{
-    color: #252525;
+    color: rgb(255, 255, 255, 0.4);
     margin-bottom: 15px;
 }
 form button{
@@ -58,8 +59,9 @@ form button{
     padding: 10px 15px;
     cursor: pointer;
     font-size: 20px;
+    border-radius: 10px;
 }
 
 form label input::placeholder{
-    color: #252525;
+    color: rgb(255, 255, 255, 0.4);
 }

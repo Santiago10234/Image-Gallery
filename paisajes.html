@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <main>
+        <div class="ful-img" id="fulImgBox">
+            <img src="img/9470de45-b8bf-4394-97c6-1d99c5108756.jpg" id="fulImg" alt="">
+            <span onclick="cerrarImg()">x</span>
+        </div>
+        <header>
+            <h1><span>Image Gallery</span></h1>
+            <nav>
+                <a href="gallery.html">HOME</a>
+                <a href="#">PAISAJES</a>
+                <a href="animales.html">ANIMALES</a>
+                <a href="carros.html">CARROS</a>
+                <a href="flores.html">FLORES</a>
+            </nav>
+        </header>
+        <div class="gallery">
+            <img src="img/Paisaje1.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/Paisaje2.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/Paisaje3.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/Paisaje4.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/Paisaje5.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/Paisaje6.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/Paisaje7.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/Paisaje8.jpg" onclick="abrirFulImg(this.src)" alt="">
+        </div>
+    </main>
+    <script src="gallery.js"></script>
+</body>
+</html>

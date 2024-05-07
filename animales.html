@@ -8,17 +8,31 @@
 </head>
 <body>
     <main>
+        <div class="ful-img" id="fulImgBox">
+            <img src="img/9470de45-b8bf-4394-97c6-1d99c5108756.jpg" id="fulImg" alt="">
+            <span onclick="cerrarImg()">x</span>
+        </div>
         <header>
-            <h1>Image Gallery</h1>
+                <h1><span>Image Gallery</span></h1>
             <nav>
                 <a href="gallery.html">HOME</a>
-                <a href="naturaleza.html">NATURALEZA</a>
+                <a href="paisajes.html">PAISAJES</a>
                 <a href="#">ANIMALES</a>
                 <a href="carros.html">CARROS</a>
                 <a href="flores.html">FLORES</a>
             </nav>
         </header>
-        <h1>Soy animales</h1>
+        <div class="gallery">
+            <img src="img/9470de45-b8bf-4394-97c6-1d99c5108756.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/descarga.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/575d8a1b-100e-4faf-82b7-a0072686c0a7.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/Wolf.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/descarga (1).jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/Bald Eagle Perch.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/descarga (2).jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/descarga (3).jpg" onclick="abrirFulImg(this.src)" alt="">
+        </div>
     </main>
+    <script src="gallery.js"></script>
 </body>
 </html>
