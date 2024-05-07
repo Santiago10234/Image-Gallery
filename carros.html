@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <title>Image Gallery (Carros)</title>
     <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
     <main>
+        <div class="ful-img" id="fulImgBox">
+            <img src="img/9470de45-b8bf-4394-97c6-1d99c5108756.jpg" id="fulImg" alt="">
+            <span onclick="cerrarImg()">x</span>
+        </div>
         <header>
-            <h1><span>Image Gallery</span></h1>
+            <h1><span><a href="index.html">Image Gallery</a></span></h1>
             <nav>
                 <a href="gallery.html">HOME</a>
                 <a href="paisajes.html">PAISAJES</a>
@@ -18,7 +22,16 @@
                 <a href="flores.html">FLORES</a>
             </nav>
         </header>
-        <h1>Soy Carros</h1>
+        <div class="gallery">
+            <img src="img/carro1.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/carro2.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/carro3.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/carro4.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/carro5.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/carro6.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/carro7.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <img src="img/carro8.jpg" onclick="abrirFulImg(this.src)" alt="">
+        </div>
     </main>
     <script src="gallery.js"></script>
 </body>
