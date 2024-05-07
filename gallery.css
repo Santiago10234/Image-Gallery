@@ -6,6 +6,10 @@
 }
 body{
     background-color: rgb(255, 255, 255);
+    transition: .7s;
+}
+body.dark{
+    background: rgb(4, 9, 59);
 }
 h1{
     text-align: center;
@@ -14,7 +18,6 @@ h1{
     margin: 50px auto;
     font-size: 45px;
 }
-
 h1::before{
     content: "";
     display: block;
@@ -25,9 +28,12 @@ h1::before{
     top: 50%;
     z-index: -1;
 }
-
 h1 span{
     background-color: white;
+    padding: 0 20px;
+}
+h1 span.dark{
+    background: rgb(4, 9, 59);
     padding: 0 20px;
 }
 .gallery{
@@ -81,6 +87,9 @@ h1 span{
 }
 nav{
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 nav a{
     text-decoration-line: none;
@@ -100,5 +109,41 @@ h1 span a{
 }
 
 .switch{
-  
+  background: #343D5B;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: white;
+}
+.switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 1000px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, .2);
+}
+.switch.active{
+    background: orange;
+    color: black;
+}
+.switch.active::after{
+    right: 0;
+    left: unset;
 }
