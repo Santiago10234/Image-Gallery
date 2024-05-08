@@ -11,30 +11,13 @@ body{
 body.dark{
     background: rgb(4, 9, 59);
 }
-h1{
-    text-align: center;
-    position: relative;
-    width: 80%;
-    margin: 50px auto;
-    font-size: 45px;
+h1 a{
+    text-decoration-line: none;
+    color: black;
+    transition: .7s;
 }
-h1::before{
-    content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    background-color: black;
-    top: 50%;
-    z-index: -1;
-}
-h1 span{
-    background-color: white;
-    padding: 0 20px;
-}
-h1 span.dark{
-    background: rgb(4, 9, 59);
-    padding: 0 20px;
+body.dark h1 a{
+    color: white;
 }
 .gallery{
     width: 80%;
@@ -49,6 +32,11 @@ h1 span.dark{
     transition: 1s;
     height: 250px;
     width: 363px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px black;
+}
+body.dark .gallery img{
+    box-shadow: 0 8px 15px rgb(39, 133, 221);
 }
 .gallery img:hover{
     transform: scale(1.1);
@@ -77,37 +65,46 @@ h1 span.dark{
     width: 90%;
     max-width: 700px;
 }
-@media screen and (max-width:400px) {
-    h1::before{
-        display: none;
-    }
-    h1 span{
-        padding: 0;
-    }
-}
 nav{
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-nav a{
+.container-nav{
+    margin-top: 20px;
+    padding: 20px;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    box-shadow: 0 5px 10px black;
+    border-radius: 10px;
+    transition: .9s;
+}
+body.dark .container-nav{
+    background: #222222;
+    box-shadow: 0 5px 10px rgb(39, 133, 221);
+}
+.enlaces a{
     text-decoration-line: none;
     margin-left: 10px;
     margin-right: 10px;
     color: rgb(87, 86, 86);
     font-size: 20px;
+    transition: .7s;
 }
-nav a:hover{
+body.dark .enlaces a{
+    color: white;
+    transition: .7s;
+}
+.enlaces a:hover{
     font-size: 25px;
     color: black;
 }
-
-h1 span a{
-    text-decoration: none;
-    color: black;
+body.dark .enlaces a:hover{
+    color: rgb(39, 133, 221);
 }
-
 .switch{
   background: #343D5B;
   border-radius: 1000px;
