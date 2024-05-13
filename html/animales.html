@@ -27,6 +27,11 @@
                         <a href="carros.html">CARROS</a>
                         <a href="flores.html">FLORES</a>
                     </div>
+                    <div>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                        
+                        <button class="agregarImg" id="addImageButton">Agregar Imagen</button>
+                    </div>
                     <button class="switch" id="switch">
                         <span><i class="fa-solid fa-sun"></i></span>
                         <span><i class="fa-solid fa-moon"></i></span>
@@ -36,14 +41,54 @@
            
         </header>
         <div class="gallery">
-            <img src="../img/9470de45-b8bf-4394-97c6-1d99c5108756.jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/descarga.jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/575d8a1b-100e-4faf-82b7-a0072686c0a7.jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/Wolf.jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/descarga (1).jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/Bald Eagle Perch.jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/descarga (2).jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/descarga (3).jpg" onclick="abrirFulImg(this.src)" alt="">
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav" id="img" src="../img/9470de45-b8bf-4394-97c6-1d99c5108756.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav"  src="../img/descarga.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav"  src="../img/575d8a1b-100e-4faf-82b7-a0072686c0a7.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav" src="../img/Wolf.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav" src="../img/descarga (1).jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav" src="../img/Bald Eagle Perch.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav" src="../img/descarga (2).jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav"  src="../img/descarga (3).jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
         </div>
     </main>
     <script src="../js/gallery.js"></script>

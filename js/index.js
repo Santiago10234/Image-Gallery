@@ -7,6 +7,7 @@ document.getElementById('button').addEventListener('click', function(event) {
 
     // Obtenemos los datos del usuario guardados en localStorage
     var usuarioGuardado = localStorage.getItem('usuario');
+    localStorage.setItem('username', username) 
 
     // Verificamos si el usuario existe
     if (usuarioGuardado) {
@@ -25,3 +26,5 @@ document.getElementById('button').addEventListener('click', function(event) {
         alert('No hay ninguna cuenta registrada');
     }
 });
+
+

@@ -16,7 +16,7 @@ document.getElementById('boton').addEventListener('click', function() {
 
     alert('¡Registro exitoso!');
     window.location.href="../html/index.html"
-
+    
     // Limpiamos los campos del formulario
     document.getElementById('username').value = '';
     document.getElementById('email').value = '';

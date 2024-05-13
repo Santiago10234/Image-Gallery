@@ -27,6 +27,11 @@
                         <a href="carros.html">CARROS</a>
                         <a href="#">FLORES</a>
                     </div>
+                    <div>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                        
+                        <button class="agregarImg" id="addImageButton">Agregar Imagen</button>
+                    </div>
                     <button class="switch" id="switch">
                         <span><i class="fa-solid fa-sun"></i></span>
                         <span><i class="fa-solid fa-moon"></i></span>
@@ -35,14 +40,54 @@
             </nav>
         </header>
         <div class="gallery">
-            <img src="../img/flor1.jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/flor2.jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/flor3.jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/flor4.jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/flor5.jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/flor6.jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/flor7.jpg" onclick="abrirFulImg(this.src)" alt="">
-            <img src="../img/flor8.jpg" onclick="abrirFulImg(this.src)" alt="">
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav" id="img" src="../img/flor1.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav"  src="../img/flor2.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav"  src="../img/flor3.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav" src="../img/flor4.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav" src="../img/flor5.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav" src="../img/flor6.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav" src="../img/flor7.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
+            <div class="contenedor-img-guardado">
+                <div class="img">
+                    <img class="imgFav"  src="../img/flor8.jpg" onclick="abrirFulImg(this.src)" alt="">
+                    <p class="username"></p>
+                </div>
+            </div>
         </div>
     </main>
     <script src="../js/gallery.js"></script>
